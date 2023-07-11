@@ -1,0 +1,8 @@
+var favoriteBooks = ["To Kill a Mockingbird", "Pride and Prejudice", "1984", "The Great Gatsby", "Harry Potter and the Sorcerer's Stone"];
+
+function displayBookTitles(books) {
+  for (var i = 0; i < books.length; i++) {
+    console.log(books[i]);
+  }
+}
+displayBookTitles(favoriteBooks);

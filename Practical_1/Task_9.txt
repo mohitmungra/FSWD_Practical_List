@@ -1,0 +1,16 @@
+function fetchData() {
+return new Promise(function(resolve, reject) {
+setTimeout(function() {
+var data = "Some fetched data";
+resolve(data);
+}, 2000);
+});
+}
+function processData(data) {
+console.log("Processing data: " + data);
+}
+fetchData()
+.then(processData)
+.catch(function(error) {
+console.log("Error occurred: " + error);
+});

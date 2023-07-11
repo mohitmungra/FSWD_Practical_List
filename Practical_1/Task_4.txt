@@ -1,0 +1,30 @@
+function findMinMaxSalary(salaries) {
+  if (salaries.length == 0) {
+    return {
+      minSalary: null,
+      maxSalary: null
+    };
+  }
+
+  var minSalary = salaries[0];
+  var maxSalary = salaries[0];
+
+  for (var i = 1; i < salaries.length; i++) {
+    if (salaries[i] < minSalary) {
+      minSalary = salaries[i];
+    }
+
+    if (salaries[i] > maxSalary) {
+      maxSalary = salaries[i];
+    }
+  }
+
+  return {
+    minSalary: minSalary,
+    maxSalary: maxSalary
+  };
+}
+var salaries = [50000, 60000, 45000, 70000, 55000];
+var result = findMinMaxSalary(salaries);
+console.log("Minimum Salary: " + result.minSalary);
+console.log("Maximum Salary: " + result.maxSalary);

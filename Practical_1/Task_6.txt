@@ -1,0 +1,6 @@
+var x; // Declare the variable outside the function
+function myFunction() {
+x = 10; // Assign a value to the variable
+}
+myFunction();
+console.log(x);
