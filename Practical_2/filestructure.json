@@ -1,0 +1,27 @@
+{
+    "name":"main",
+    "ifFile":false,
+    "contents":[
+       {
+         "name":"folder1",
+         "ifFile":false,
+         "contents":[
+            {
+               "name":"file1.txt",
+               "isFile":true
+            }
+         ]
+      },
+       {
+         "name":"folder2",
+         "ifFile":false,
+         "contents":[
+            {
+               "name":"sub",
+               "ifFile":false
+            }
+         ]
+       }
+    ]
+ }
+ 
